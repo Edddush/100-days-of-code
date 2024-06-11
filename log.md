@@ -5,7 +5,7 @@ journey
     title MY 100-DAY CODING JOURNEY
     section LC-1768
       D001: 9: Arrays
-      D002: 9: Arrays, GCD
+      D002: 6: Arrays, GCD
       D---: 9: Sets
       D---: 9: Stack
       D---: 9: Queue
