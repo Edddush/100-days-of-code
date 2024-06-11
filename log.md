@@ -5,22 +5,23 @@ journey
     title MY 100-DAY CODING JOURNEY
     section LC-1768
       D001: 9: Arrays
-      D---: 9: HashMap
+      D002: 9: Arrays, GCD
       D---: 9: Sets
       D---: 9: Stack
       D---: 9: Queue
       D---: 9: Tree
 ```
 > [!IMPORTANT]
-> All solutions from this log are my own.
-> I am keeping track of my progress as I go through the challenge.
-> I hope to see constant improvements on performance, algorithms, and data structures choices.
+> All solutions from this log are my own
+> I am keeping track of my progress as I go through the challenge
+> I hope to see constant improvements on performance, algorithms, and data structures choices
 
 ## Day 1
-
+Public accountability and date on [X](https://x.com/Edddushi/status/1799998093464838351)
 ### Accomplishments
 - Solved the Merge Strings Altenately on Leetcode #1768
 - Learned how to traverse an array with multiple indices
+### Challenges
 - Struggled understanding all moving parts at first, I started actually thinking out loud at the end
   
 <details>
@@ -57,8 +58,50 @@ journey
 </details>
 
 
+# D002
+Public accountability and date on [X](https://x.com/Edddushi/status/1800370219149656207)
 
+### Accomplishments
+- Solved the Greatest Common Divisor of Strings on Leetcode #1071
+- In hindisght I should have been able to tell by the name I would need my Maths hat for this one, but I learnt it the hard way
+### Challenges
+- This felt like an easy hard question. Not because the solution is particularly hard to implement, realizing the maths behind it is the tricky part
+  
+<details>
+  <summary>CLICK TO VIEW SOLUTION</summary>
 
+   ```python
+    class Solution:
+        def gcdOfStrings(self, str1: str, str2: str) -> str:
+            common_chars = []
+            size1 = len(str1)
+            size2 = len(str2)
+            longer_word = str1 if (size1 > size2) else str2
+            shorter_word = str2 if (size1 > size2) else str1
+            common_str = shorter_word
+            i = 1
+    
+            if( size1 == 0 or size2 == 0):
+                return ""
+    
+            for j in range(min(size1, size2)):
+                gcd = len(common_str)
+    
+                if(size1 % gcd == 0 and size2 % gcd == 0):
+    
+                    multiplier1 = int(size1 / len(common_str))
+                    multiplier2 = int(size2 / len(common_str))
+    
+                    if(str1 == common_str * multiplier1 and str2 == common_str * multiplier2):
+                        return common_str
+    
+                common_str = shorter_word[:-i]
+                i += 1 
+    
+            return ""
+   ```
+  
+</details>
 
 
 <!---
