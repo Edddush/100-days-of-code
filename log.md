@@ -7,7 +7,7 @@ journey
       D001: 9: Arrays
       D002: 6: Arrays, GCD
       D003: 9: Arrays, copy types
-      D---: 9: Stack
+      D004: 7: Stack
       D---: 9: Queue
       D---: 9: Tree
 ```
@@ -18,12 +18,14 @@ journey
 
 ## Day 1
 Public accountability and date on [X](https://x.com/Edddushi/status/1799998093464838351)
+> [!NOTE]
+> Written in Python
 ### Accomplishments
 - Solved the Merge Strings Altenately on Leetcode #1768
 - Learned how to traverse an array with multiple indices
 ### Challenges
 - Struggled understanding all moving parts at first, I started actually thinking out loud at the end
-  
+
 <details>
   <summary>CLICK TO VIEW SOLUTION</summary>
 
@@ -60,7 +62,8 @@ Public accountability and date on [X](https://x.com/Edddushi/status/179999809346
 
 ## Day 2
 Public accountability and date on [X](https://x.com/Edddushi/status/1800370219149656207)
-
+> [!NOTE]
+> Written in Python
 ### Accomplishments
 - Solved the Greatest Common Divisor of Strings on Leetcode #1071
 - In hindisght I should have been able to tell by the name I would need my Maths hat for this one, but I learnt it the hard way
@@ -106,9 +109,9 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180037021914
 </details>
 
 ## Day 3
-
 Public accountability and date on [X](https://x.com/Edddushi/status/1800736235088146658)
-
+> [!NOTE]
+> Written in Python
 ### Accomplishments
 - Solved the Kids With the Greatest Number of Candies Leetcode #1431
 - I immediately knew what to do, I beat 72% of submission with my very first solution
@@ -131,6 +134,83 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180073623508
                 else:
                     boolean_arr.append(False)
             return boolean_arr
+   ```
+</details>
+
+## Day 4
+Public accountability and date on [X](https://x.com/Edddushi/status/1800943305779257712)
+> [!NOTE]
+> Written in Python
+### Accomplishments
+| Reverse Vowels of a String Leetcode #345  | Can Place Flowers Leetcode #605 |
+| ------------- | ------------- |
+| Straightforward solution on this one (or maybe I am getting more intuitive)  | Learned that it is okay to start with the most intuitive approach rather than optimizing in my head  |
+| Learned how to properly use two pointers by changing the values according to circumstance  | Used an incremental process to realize my mishaps|
+### Challenges     
+| Reverse Vowels of a String Leetcode #345  | Can Place Flowers Leetcode #605 |
+| ------------- | ------------- |
+| Dealing with two pointers that behave inversely was a learning hill | Completely underestimated the cases and ended up having a hard time adjusting from what I thought was absolutely right |
+| Didn't go through my initial solution and was too confident |  It unfortunately took a long time before I realized that it was a matter of checking adjacent 0's|
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#345</summary>
+
+   ```python
+    def reverseVowels(self, s: str) -> str:
+        vowels = ['a', 'e', 'i', 'o', 'u', 'U', 'O', 'I', 'E', 'A']
+        sAsList = list(s)
+        i = 0
+        j = len(s)-1
+
+        while(j > i):
+            if s[i] in vowels:
+                if s[j] in vowels:
+                    temp = sAsList[j]
+                    sAsList[j] = sAsList[i]
+                    sAsList[i] = temp
+                    j -= 1
+                    i += 1
+                else:
+                    j -= 1
+            else:
+                i += 1
+        
+        return ''.join(sAsList)
+   ```
+</details>
+
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#605</summary>
+
+   ```python
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+        alternate = 0
+        i = 0
+
+        if(n == 0):
+            return True
+        
+        #Making sure we have a minimum of two spots in the flowerbed for the for loop logic
+        if(len(flowerbed) == 1 and n <= 1 and flowerbed[0] == 0):
+            return True
+        elif(len(flowerbed) == 1 and n > 1):
+            return False
+
+        while(i < len(flowerbed)):
+            if(i == 0 and flowerbed[i] == 0 and flowerbed[i+1] == 0):
+                alternate += 1
+                i += 1
+            elif( i != 0 and i != len(flowerbed)-1 and flowerbed[i-1] == 0 and flowerbed[i] == 0 and flowerbed[i+1] == 0):
+                alternate += 1
+                i += 1
+            elif(i == len(flowerbed)-1 and flowerbed[i] == 0 and flowerbed[i-1] == 0):
+                alternate += 1
+                i += 1
+            i+=1
+
+
+        return alternate >= n
    ```
 </details>
 
