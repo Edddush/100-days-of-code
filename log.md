@@ -6,7 +6,7 @@ journey
     section LC-1768
       D001: 9: Arrays
       D002: 6: Arrays, GCD
-      D003: 9: Arrays, Shallow vs Deep Copy
+      D003: 9: Arrays, copy types
       D---: 9: Stack
       D---: 9: Queue
       D---: 9: Tree
