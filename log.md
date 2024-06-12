@@ -58,7 +58,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/179999809346
 </details>
 
 
-# D002
+## Day 2
 Public accountability and date on [X](https://x.com/Edddushi/status/1800370219149656207)
 
 ### Accomplishments
@@ -73,7 +73,6 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180037021914
    ```python
     class Solution:
         def gcdOfStrings(self, str1: str, str2: str) -> str:
-            common_chars = []
             size1 = len(str1)
             size2 = len(str2)
             longer_word = str1 if (size1 > size2) else str2
@@ -86,15 +85,18 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180037021914
     
             for j in range(min(size1, size2)):
                 gcd = len(common_str)
-    
+
+                #only if the substring is divisible then can it be a multiple of any of the strings
                 if(size1 % gcd == 0 and size2 % gcd == 0):
     
                     multiplier1 = int(size1 / len(common_str))
                     multiplier2 = int(size2 / len(common_str))
-    
+
+                    #the substring must be a multiple of both strings not just the longest or shortest
                     if(str1 == common_str * multiplier1 and str2 == common_str * multiplier2):
                         return common_str
-    
+
+                #checking each substring starting from the full shortest word, one character less each time
                 common_str = shorter_word[:-i]
                 i += 1 
     
@@ -103,6 +105,34 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180037021914
   
 </details>
 
+## Day 3
+
+Public accountability and date on [X](https://x.com/Edddushi/status/1800736235088146658)
+
+### Accomplishments
+- Solved the Kids With the Greatest Number of Candies Leetcode #1431
+- I immediately knew what to do, I beat 72% of submission with my very first solution
+### Challenges
+- I couldn't figure out at first why my list was not making a shallow copy. It turns out that if you just assign the list like sorted_candies = candies, it makes a deep copy.
+  
+<details>
+  <summary>CLICK TO VIEW SOLUTION</summary>
+
+   ```python
+    class Solution:
+        def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+            sorted_candies = candies[:]
+            sorted_candies.sort()
+            boolean_arr = []
+    
+            for i in range(len(candies)):
+                if(candies[i] + extraCandies >= sorted_candies[-1]):
+                    boolean_arr.append(True)
+                else:
+                    boolean_arr.append(False)
+            return boolean_arr
+   ```
+</details>
 
 <!---
 ### Day 0: February 30, 2016 (Example 1)
