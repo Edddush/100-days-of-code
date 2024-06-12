@@ -7,7 +7,7 @@ journey
       D001: 9: Arrays
       D002: 6: Arrays, GCD
       D003: 9: Arrays, copy types
-      D004: 7: Stack
+      D004: 7: Arrays, Two Pointers
       D---: 9: Queue
       D---: 9: Tree
 ```
