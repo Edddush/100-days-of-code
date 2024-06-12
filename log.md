@@ -3,7 +3,7 @@
 ```mermaid
 journey
     title MY 100-DAY CODING JOURNEY
-    section LC-1768
+    section LC-75
       D001: 9: Arrays
       D002: 6: Arrays, GCD
       D003: 9: Arrays, copy types
