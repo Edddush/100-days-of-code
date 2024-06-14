@@ -21,7 +21,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/179999809346
 > [!NOTE]
 > Written in Python
 ### Accomplishments
-- Solved the Merge Strings Altenately on Leetcode #1768
+- Solved the Merge Strings Altenately on LeetCode #1768
 - Learned how to traverse an array with multiple indices
 ### Challenges
 - Struggled understanding all moving parts at first, I started actually thinking out loud at the end
@@ -65,7 +65,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180037021914
 > [!NOTE]
 > Written in Python
 ### Accomplishments
-- Solved the Greatest Common Divisor of Strings on Leetcode #1071
+- Solved the Greatest Common Divisor of Strings on LeetCode #1071
 - In hindisght I should have been able to tell by the name I would need my Maths hat for this one, but I learnt it the hard way
 ### Challenges
 - This felt like an easy hard question. Not because the solution is particularly hard to implement, realizing the maths behind it is the tricky part
@@ -113,7 +113,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180073623508
 > [!NOTE]
 > Written in Python
 ### Accomplishments
-- Solved the Kids With the Greatest Number of Candies Leetcode #1431
+- Solved the Kids With the Greatest Number of Candies LeetCode #1431
 - I immediately knew what to do, I beat 72% of submission with my very first solution
 ### Challenges
 - I couldn't figure out at first why my list was not making a shallow copy. It turns out that if you just assign the list like sorted_candies = candies, it makes a deep copy.
@@ -142,12 +142,12 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180094330577
 > [!NOTE]
 > Written in Python
 ### Accomplishments
-| Reverse Vowels of a String Leetcode #345  | Can Place Flowers Leetcode #605 |
+| Reverse Vowels of a String LeetCode #345  | Can Place Flowers LeetCode #605 |
 | ------------- | ------------- |
 | Straightforward solution on this one (or maybe I am getting more intuitive)  | Learned that it is okay to start with the most intuitive approach rather than optimizing in my head  |
 | Learned how to properly use two pointers by changing the values according to circumstance  | Used an incremental process to realize my mishaps|
 ### Challenges     
-| Reverse Vowels of a String Leetcode #345  | Can Place Flowers Leetcode #605 |
+| Reverse Vowels of a String LeetCode #345  | Can Place Flowers LeetCode #605 |
 | ------------- | ------------- |
 | Dealing with two pointers that behave inversely was a learning hill | Completely underestimated the cases and ended up having a hard time adjusting from what I thought was absolutely right |
 | Didn't go through my initial solution and was too confident |  It unfortunately took a long time before I realized that it was a matter of checking adjacent 0's|
@@ -219,11 +219,11 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180146329038
 > [!NOTE]
 > Written in Python
 ### Accomplishments
-| Move Zeroes #283  | Is Subsequence #392 |
+| Move Zeroes LeetCode #283  | Is Subsequence LeetCode #392 |
 | ------------- | ------------- |
 | Straightforward solution  | Solution was intuitive and efficient |
 ### Challenges     
-| Move Zeroes #283 | Is Subsequence #392 |
+| Move Zeroes LeetCode #283 | Is Subsequence LeetCode #392 |
 | ------------- | ------------- |
 | Minor indexing issues | Missed special cases when letters are repeated or we reach the end of the parent string before the subsequence is done |
 
