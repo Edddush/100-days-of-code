@@ -3,12 +3,12 @@
 ```mermaid
 journey
     title MY 100-DAY CODING JOURNEY
-    section LC-75
+    section LeetCode Blind 75
       D001: 9: Arrays
       D002: 6: Arrays, GCD
       D003: 9: Arrays, copy types
       D004: 7: Arrays, Two Pointers
-      D---: 9: Queue
+      D005: 9: Arrays, Two pointers
       D---: 9: Tree
 ```
 > [!IMPORTANT]
@@ -211,6 +211,68 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180094330577
 
 
         return alternate >= n
+   ```
+</details>
+
+## Day 5
+Public accountability and date on [X](https://x.com/Edddushi/status/1801463290381336955)
+> [!NOTE]
+> Written in Python
+### Accomplishments
+| Move Zeroes #283  | Is Subsequence #392 |
+| ------------- | ------------- |
+| Straightforward solution  | Solution was intuitive and efficient |
+### Challenges     
+| Move Zeroes #283 | Is Subsequence #392 |
+| ------------- | ------------- |
+| Minor indexing issues | Missed special cases when letters are repeated or we reach the end of the parent string before the subsequence is done |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#283</summary>
+
+   ```python
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        i = 0
+        j = len(nums) - 1
+
+        while(j > i):
+            if(nums[i] == 0):
+                nums.pop(i)
+                nums.append(0)
+                j -= 1
+            if(nums[i] != 0):
+                i += 1
+   ```
+</details>
+
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#392</summary>
+
+   ```python
+    def isSubsequence(self, s: str, t: str) -> bool:
+        if(len(s) == 0):
+            return True
+        
+        if(len(s) > len(t)):
+            return False
+        
+        left  = 0
+        right  = 0
+
+        while(left < len(s)):
+            # End loop if all characters were exhausted in both strings and no match
+            if(right == len(t)):
+                return False
+                
+            if(t[right] == s[left]):
+                left += 1
+            right += 1
+
+        return True
    ```
 </details>
 
