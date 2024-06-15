@@ -9,7 +9,7 @@ journey
       D003: 9: Arrays, copy types
       D004: 7: Arrays, Two Pointers
       D005: 9: Arrays, Two pointers
-      D---: 9: Tree
+      D006: 9: Arrays, Prefix Sum
 ```
 > [!IMPORTANT]
 > All solutions from this log are my own
@@ -273,6 +273,41 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180146329038
             right += 1
 
         return True
+   ```
+</details>
+
+
+
+## Day 6
+Public accountability and date on [X](https://x.com/Edddushi/status/1801816263699640713)
+> [!NOTE]
+> Written in Python
+### Accomplishments
+- Solved the Find Pivot Index LeetCode #1431
+- The solution was straightforward but needed improvement once I saw my submission runtime
+### Challenges
+- There was a slightly simpler solution that I did not think of
+  
+<details>
+  <summary>CLICK TO VIEW SOLUTION</summary>
+
+   ```python
+    def pivotIndex(self, nums: List[int]) -> int:
+        if len(nums) == 1:
+            return 0
+
+        total = sum(nums)
+        leftSum = 0
+
+        for i in range(len(nums)):
+            rightSum = sum(nums[i + 1 :])
+
+            if(leftSum == rightSum):
+                return i
+
+            leftSum += nums[i]
+
+        return -1
    ```
 </details>
 
