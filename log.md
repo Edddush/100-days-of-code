@@ -10,11 +10,12 @@ journey
       D004: 7: Arrays, Two Pointers
       D005: 9: Arrays, Two pointers
       D006: 9: Arrays, Prefix Sum
+      D007: 9: HashSet, HashMap, Two Pointers
 ```
 > [!IMPORTANT]
-> All solutions from this log are my own
-> I am keeping track of my progress as I go through the challenge
-> I hope to see constant improvements on performance, algorithms, and data structures choices
+> All solutions from this log are my own.
+> I am keeping track of my progress as I go through the challenge.
+> I hope to see constant improvements on performance, algorithms, and data structures choices.
 
 ## Day 1
 Public accountability and date on [X](https://x.com/Edddushi/status/1799998093464838351)
@@ -308,6 +309,89 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180181626369
             leftSum += nums[i]
 
         return -1
+   ```
+</details>
+
+## Day 7
+Public accountability and date on [X](https://x.com/Edddushi/status/1802176966960808294)
+> [!NOTE]
+> Written in Python
+### Accomplishments
+| Valid Palindrome LeetCode #125  | Two Sum LeetCode #1 | Valid Anagram LeetCode #242 | Contains Duplicate #217
+| ------------- | ------------- |------------- | ------------- |
+| Learned more about AscII | Learned more about HashMaps in python | Leveraged sorting to find faster solutions | Learned more about HashSets|
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS</summary>
+
+   ```python
+    def isPalindrome(self, s: str) -> bool:
+        i = 0
+        j = len(s) - 1
+
+        while(i < j):
+            while(j > i and not self.isAscii(s[j])):
+                j -= 1
+            while(i < j and not self.isAscii(s[i])):
+                i += 1
+            
+            if(s[i].lower() != s[j].lower()):
+                return False
+
+            i += 1
+            j -=1
+
+        return True
+
+    def isAscii(self, character: str) -> bool:
+        return ((character >= "a" and character <= "z")) or (character >= "A" and character <= "Z") or (character >= "0" and character <= ("9"))
+
+   ```
+
+   ```python
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        diffs = {}
+
+        for i in range(len(nums)):
+            if(target - nums[i] not in diffs):
+                diffs[nums[i]] = i
+            else:
+                return [diffs[target - nums[i]], i]
+
+   ```
+
+   ```python
+    def isAnagram(self, s: str, t: str) -> bool:
+        if(len(s) != len(t)):
+            return False
+
+        sMap = {}
+        tMap = {}
+
+        for i in range(len(s)):
+            sMap[s[i]] = 1 + sMap.get(s[i], 0)
+            tMap[t[i]] = 1 + tMap.get(t[i], 0)
+
+        for c in sMap:
+            if sMap[c] != tMap.get(c, 0):
+                return False
+
+        return True
+
+   ```
+
+   ```python
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        duplicates  = set()
+
+        for n in nums:
+            if(n in duplicates):
+                return True
+
+            duplicates.add( n )
+
+        return False
+
    ```
 </details>
 
