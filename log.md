@@ -3,7 +3,7 @@
 ```mermaid
 journey
     title MY 100-DAY CODING JOURNEY
-    section LeetCode Blind 75
+    section NeetCode 150
       D001: 9: Arrays
       D002: 6: Arrays, GCD
       D003: 9: Arrays, copy types
@@ -11,6 +11,12 @@ journey
       D005: 9: Arrays, Two pointers
       D006: 9: Arrays, Prefix Sum
       D007: 9: HashSet, HashMap, Two Pointers
+      D008: 8: Binary Search, Stack
+      D009: 9: Linked List, Sliding Window
+    section Blind 75
+      D---: 9: Arrays, Prefix Sum
+      D---: 9: HashSet, HashMap, Two Pointers
+      D---: 8: Linked List, Sliding Window
 ```
 > [!IMPORTANT]
 > All solutions from this log are my own.
@@ -277,8 +283,6 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180146329038
    ```
 </details>
 
-
-
 ## Day 6
 Public accountability and date on [X](https://x.com/Edddushi/status/1801816263699640713)
 > [!NOTE]
@@ -391,7 +395,129 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180217696696
             duplicates.add( n )
 
         return False
+   ```
+</details>
 
+## Day 8
+Public accountability and date on [X](https://x.com/Edddushi/status/1802551637786960178)
+> [!NOTE]
+> Written in Python
+### Accomplishments
+| Valid Parantheses #20 | Binary Search #704 |
+| ------------- | ------------- |
+| Straightforward solution  | Solution was intuitive and efficient |
+### Challenges     
+| Valid Parantheses #20 | Binary Search #704 |
+| ------------- | ------------- |
+| Minor indexing issues when finding the middle | No issues, mostly understanding the problem being asked |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#20</summary>
+
+   ```python
+    def isValid(self, s: str) -> bool:
+        mapping = { ")" : "(", "}" : "{", "]" : "["}
+        opening = "({["
+        closing = "]})"
+        stack = []
+
+        for i in s:
+            if(i in opening):
+                stack.append(i)
+            elif(i in closing):
+                if(not stack):
+                    return False
+                    
+                value = stack.pop()
+                if value != mapping[i]:
+                    return False
+
+        if stack:
+            return False
+
+        return True
+   ```
+</details>
+
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#704</summary>
+
+   ```python
+    def search(self, nums: List[int], target: int) -> int:
+        i, j = 0, len(nums) - 1
+
+        while(i <= j):
+            mid = (i + j ) // 2
+
+            if(nums[mid] > target):
+                j = mid - 1
+            elif(nums[mid] < target):
+                i = mid + 1
+            else:
+                return mid
+        return -1
+   ```
+</details>
+
+## Day 9
+Public accountability and date on [X](https://x.com/Edddushi/status/1802908740292665573)
+> [!NOTE]
+> Written in Python
+### Accomplishments
+| Reverse Linked List #206  | Best Time to Buy and Sell Stock #121 |
+| ------------- | ------------- |
+| Learned how linked lists are set up in python | learned about sliding window |
+### Challenges     
+| Reverse Linked List #206  | Best Time to Buy and Sell Stock #121 |
+| ------------- | ------------- |
+| Mixed up pointers and nodes, confusion not realising we are not actually moving the nodes ever | No issues, went very well|
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#206</summary>
+
+   ```python
+    # Definition for singly-linked list.
+    # class ListNode:
+    #     def __init__(self, val=0, next=None):
+    #         self.val = val
+    #         self.next = next
+        def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+            prev, curr = None, head
+    
+            while(curr is not None):
+                temp = curr.next
+                curr.next = prev
+                prev = curr
+                curr = temp
+                
+            return prev
+   ```
+</details>
+
+<details>
+  <summary>CLICK TO VIEW SOLUTION TO LC#121</summary>
+
+   ```python
+    def maxProfit(self, prices: List[int]) -> int:
+        l, r = 0, 1
+        maximum = 0
+
+        while(r < len(prices)):
+            profit = prices[r] - prices[l]
+
+            if(maximum < profit):
+                maximum = profit
+
+            if(prices[r] < prices[l]):
+                l = r
+
+            r += 1
+
+        if(maximum < 0):
+            return 0
+
+        return maximum
    ```
 </details>
 
