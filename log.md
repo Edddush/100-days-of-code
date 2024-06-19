@@ -14,7 +14,7 @@ journey
       D008: 8: Binary Search, Stack
       D009: 9: Linked List, Sliding Window
     section Blind 75
-      D---: 9: Arrays, Prefix Sum
+      D010: 7: Binary Tree, HashMap, Linked List, Prefix Sum
       D---: 9: HashSet, HashMap, Two Pointers
       D---: 8: Linked List, Sliding Window
 ```
@@ -467,7 +467,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180290874029
 ### Accomplishments
 | Reverse Linked List #206  | Best Time to Buy and Sell Stock #121 |
 | ------------- | ------------- |
-| Learned how linked lists are set up in python | learned about sliding window |
+| Learned how linked lists are set up in python | Learned about sliding window |
 ### Challenges     
 | Reverse Linked List #206  | Best Time to Buy and Sell Stock #121 |
 | ------------- | ------------- |
@@ -518,6 +518,163 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180290874029
             return 0
 
         return maximum
+   ```
+</details>
+
+## Day 10
+Public accountability and date on [X](https://x.com/Edddushi/status/1803271830251139414)
+> [!NOTE]
+> Written in Python
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems
+### Accomplishments
+| Binary Tree | Linked List |
+| ------------- | ------------- |
+| Improved depth first search through recursion | Learned how to manipulate pointers in python |
+### Challenges     
+| Binary Tree | Linked List |
+| ------------- | ------------- |
+| Unable to distinguish the main operation of the recursion| Challenging intuition |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        head = dummy
+
+        while(list1 and list2):
+            if(list1.val <= list2.val):
+                head.next = list1
+                list1 = list1.next
+            else:
+                head.next = list2
+                list2 = list2.next
+
+            head = head.next
+
+        if(list1 is None):
+            head.next = list2
+        elif(list2 is None):
+            head.next = list1
+
+        return dummy.next
+   ```
+
+   ```python
+#LC141
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        slow, fast = head, head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+            if(slow == fast):
+                return True
+                
+        return False
+   ```
+
+   ```python
+#LC226
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        return self.invert(root)
+
+    def invert(self, root):
+        if(root is None):
+            return root
+        
+        self.invert(root.left)
+        self.invert(root.right)
+
+        temp = root.left
+        root.left = root.right
+        root.right = temp
+
+        return root
+   ```
+
+   ```python
+#LC100
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        if(not p and not q):
+            return True
+        if(not p or not q):
+            return False
+        if(p.val != q.val):
+            return False
+        
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+   ```
+
+   ```python
+#LC1832
+class Solution:
+  def isAlpha(self, character: str):
+    return character.upper() >= "A" and character.upper() <= "Z" 
+
+  def checkIfPangram(self, sentence):
+    mapping = {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "E": 0,
+    "F": 0,
+    "G": 0,
+    "H": 0,
+    "I": 0,
+    "J": 0,
+    "K": 0,
+    "L": 0,
+    "M": 0,
+    "N": 0,
+    "O": 0,
+    "P": 0, 
+    "Q": 0,
+    "R": 0,
+    "S": 0,
+    "T": 0,
+    "U": 0,
+    "V": 0,
+    "W": 0,
+    "X": 0,
+    "Y": 0, 
+    "Z": 0
+    }
+
+    for i in sentence:
+      if self.isAlpha(i):
+        mapping[i.upper()] = 1 + mapping.get(i.upper(), 0)
+      
+    if 0 in mapping.values():
+      return False
+
+    return True
    ```
 </details>
 
