@@ -539,6 +539,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180327183025
   <summary>CLICK TO VIEW SOLUTIONS </summary>
 
    ```python
+    #LC21
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         head = dummy
