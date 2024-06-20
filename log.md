@@ -15,8 +15,7 @@ journey
       D009: 9: Linked List, Sliding Window
     section Blind 75
       D010: 7: Binary Tree, HashMap, Linked List, Prefix Sum
-      D---: 9: HashSet, HashMap, Two Pointers
-      D---: 8: Linked List, Sliding Window
+      D011: 9: Binary Tree, Two Pointers
 ```
 > [!IMPORTANT]
 > All solutions from this log are my own.
@@ -676,5 +675,68 @@ class Solution:
       return False
 
     return True
+   ```
+</details>
+
+
+## Day 11
+Public accountability and date on [X](https://x.com/Edddushi/status/1803631661021565315)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+| Binary Tree | Two Pointers |
+| ------------- | ------------- |
+| Improved binary tree manipulation through recursion | Improved two pointer usage in python |
+### Challenges     
+| Binary Tree | Two Pointers |
+| ------------- | ------------- |
+| Had issues breaking down the problem and apply it to recursion| None this time |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC104
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if(not root):
+            return 0
+        
+        stack = [[root, 1]]
+        maximum = 0
+
+        while(stack):
+            node, level = stack.pop()
+
+            if(node):
+                maximum = max(level, maximum)
+                stack.append([node.left, level + 1])
+                stack.append([node.right, level + 1])
+
+        return maximum
+   ```
+
+   ```python
+    #LC572
+    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if(root and not subRoot):
+            return True
+        if(not root and subRoot):
+            return False
+        
+        if(self.isSimilar(root, subRoot)):
+            return True
+        
+        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+
+    def isSimilar(self, root, subRoot):
+        if(not root and not subRoot):
+            return True
+        
+        if root and subRoot and (root.val == subRoot.val):
+            return self.isSimilar(root.left, subRoot.left) and self.isSimilar(root.right, subRoot.right)
+
+        return False
+
    ```
 </details>
