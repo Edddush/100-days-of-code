@@ -16,13 +16,13 @@ journey
     section Blind 75
       D010: 7: Binary Tree, HashMap, Linked List, Prefix Sum
       D011: 9: Binary Tree, Two Pointers
-      D012: 6: Binary Tree, Two Pointers, Linked List, 2-D Arrays
+      D012: 6: Binary Tree, Two Pointers, Linked List, 2-D Array
 ```
 > [!IMPORTANT]
-> All solutions from this log are my own.
-> I am keeping track of my progress as I go through the challenge.
-> I hope to see constant improvements on performance, algorithms, and data structures choices.
-> Mostly keeping track of the LC questions but I solve on multiple platforms, unfortunately these are not as standardized
+> - All solutions from this log are my own.
+> - I am keeping track of my progress as I go through the challenge.
+> - I hope to see constant improvements on performance, algorithms, and data structures choices.
+> - Mostly keeping track of the LC questions but I solve on multiple platforms, unfortunately these are not as standardized
 
 ## Day 1
 Public accountability and date on [X](https://x.com/Edddushi/status/1799998093464838351)
@@ -743,8 +743,8 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180363166102
    ```
 </details>
 
-## Day 11
-Public accountability and date on [X](https://x.com/Edddushi/status/1803631661021565315)
+## Day 12
+Public accountability and date on [X](https://x.com/Edddushi/status/1803986183317320190)
 > [!NOTE]
 > Written in Python.
 > Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
