@@ -16,11 +16,13 @@ journey
     section Blind 75
       D010: 7: Binary Tree, HashMap, Linked List, Prefix Sum
       D011: 9: Binary Tree, Two Pointers
+      D012: 6: Binary Tree, Two Pointers, Linked List, 2-D Arrays
 ```
 > [!IMPORTANT]
 > All solutions from this log are my own.
 > I am keeping track of my progress as I go through the challenge.
 > I hope to see constant improvements on performance, algorithms, and data structures choices.
+> Mostly keeping track of the LC questions but I solve on multiple platforms, unfortunately these are not as standardized
 
 ## Day 1
 Public accountability and date on [X](https://x.com/Edddushi/status/1799998093464838351)
@@ -737,6 +739,66 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180363166102
             return self.isSimilar(root.left, subRoot.left) and self.isSimilar(root.right, subRoot.right)
 
         return False
+
+   ```
+</details>
+
+## Day 11
+Public accountability and date on [X](https://x.com/Edddushi/status/1803631661021565315)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+| Binary Tree | Two Pointers | LinkedList | 2-D arrays
+| ------------- | ------------- | ------------- | ------------- |
+| More complex binary tree recursions | Improved two pointer usage in python | More complex techniques with linked lists | Identified knowledge gap with 2-D arrays
+### Challenges     
+| Binary Tree | Two Pointers | LinkedList | 2-D arrays
+| ------------- | ------------- | ------------- | ------------- |
+| I find myself needing help on solutions | None this time | Still confused with pointers| Complete lack of knowledge, including geometry and such |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC36
+   def isValidSudoku(self, board: List[List[str]]) -> bool:
+        size = len(board)
+        rows = collections.defaultdict(set)
+        cols = collections.defaultdict(set)
+        grid = collections.defaultdict(set)
+
+        for i in range(size):
+            for j in range(size):
+                value = board[i][j]
+
+                if( value != "."):
+                    if(value in rows[i]):
+                        return False
+                    elif(value in cols[j]):
+                        return False
+                    elif(value in grid[(i//3, j//3)]):
+                        return False
+                    
+                    rows[i].add(value)
+                    cols[j].add(value)
+                    grid[i//3, j//3].add(value)
+
+        return True
+   ```
+
+   ```python
+    #LC48
+    def rotate(self, matrix: List[List[int]]) -> None:
+        n = len(matrix)
+
+        for i in range(n):
+            for j in range(i+1, n):
+               matrix[j][i], matrix[i][j] = matrix[i][j], matrix[j][i]
+
+        for i in range(n):
+            for j in range(n // 2):
+                matrix[i][j], matrix[i][n - 1 - j] = matrix[i][n - 1 - j], matrix[i][j]
 
    ```
 </details>
