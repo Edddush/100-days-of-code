@@ -16,7 +16,9 @@ journey
     section Blind 75
       D010: 7: Binary Tree, HashMap, Linked List, Prefix Sum
       D011: 9: Binary Tree, Two Pointers
-      D012: 6: Binary Tree, Two Pointers, Linked List, 2-D Array
+      D012: 6: Binary Tree, Two Pointers, Linked List, 2-D Arrays
+      D013: 7: 2-D Arrays, Arrays
+      D014: 9: 1-DP, Arrays
 ```
 > [!IMPORTANT]
 > - All solutions from this log are my own.
@@ -800,5 +802,116 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180398618331
             for j in range(n // 2):
                 matrix[i][j], matrix[i][n - 1 - j] = matrix[i][n - 1 - j], matrix[i][j]
 
+   ```
+</details>
+
+## Day 13
+Public accountability and date on [X](https://x.com/Edddushi/status/1804354226316775652)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+| 2-D Arrays | Arrays|
+| ------------- | ------------- |
+| Improved matrix manipulation through recursion | String manipulation with the number of ways approach|
+### Challenges     
+| 2-D Arrays | Arrays|
+| ------------- | ------------- |
+| Difficulty understanding the 2-D mappings | Difficulty with calculating accurately the bounds of arrays |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC427
+    def construct(self, grid: List[List[int]]) -> 'Node':
+        def dfs(size, row, col):
+            sameValues = True
+
+            for i in range(size):
+                for j in range(size):
+                    if(grid[row][col] != grid[i + row][j + col]):
+                        sameValues = False
+                        break
+
+            if sameValues:
+                return Node(grid[row][col], True)
+          
+            size = size // 2
+            top_left = dfs(size, row, col)
+            top_right = dfs(size, row, col + size)
+            bottom_left = dfs(size, row + size, col)
+            bottom_right = dfs(size, row+size, col+size)
+
+            return Node(0, False, top_left, top_right, bottom_left, bottom_right)
+        return dfs(len(grid), 0, 0)
+   ```
+
+   ```python
+    #LC572
+    #LC1400
+    def canConstruct(self, s: str, k: int) -> bool:
+        if(len(s) < k):
+            return False
+        
+        count = {}
+        sumOdd = 0
+
+        for char in s:
+            count[char] = 1 + count.get(char, 0)
+        
+        for val in count.values():
+            if(val & 1 == 1):
+                sumOdd += 1
+        
+        return sumOdd <= k
+   ```
+</details>
+
+## Day 14
+Public accountability and date on [X](https://x.com/Edddushi/status/1804723072248729625)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+| 1-DP | Arrays |
+| ------------- | ------------- |
+| Introductory problem to 1-DP | Postfix and prefix approach from a given index is clear|
+### Challenges     
+| 1-DP | Arrays |
+| ------------- | ------------- |
+| Currently hard to understand and build an intuition for it | None this time |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC70
+    def climbStairs(self, n: int) -> int:
+        one, two = 1, 1
+
+        for i in range(n-1):
+            one, two = one + two, one
+        
+        return one
+   ```
+
+   ```python
+    #LC238
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        postfix = 1
+        prefix = 1
+        size = len(nums)
+        output = [1] * size
+
+        for i in range(size):
+            output[i] = prefix
+            prefix *= nums[i]
+
+        for i in range(size-1, -1, -1):
+            output[i] *= postfix
+            postfix *= nums[i]
+        
+        return output
    ```
 </details>
