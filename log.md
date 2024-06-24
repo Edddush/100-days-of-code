@@ -19,6 +19,7 @@ journey
       D012: 6: Binary Tree, Two Pointers, Linked List, 2-D Arrays
       D013: 7: 2-D Arrays, Arrays
       D014: 9: 1-DP, Arrays
+      D015: 9: 1-DP, Bit Manipulation
 ```
 > [!IMPORTANT]
 > - All solutions from this log are my own.
@@ -160,7 +161,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180094330577
 | Reverse Vowels of a String LeetCode #345  | Can Place Flowers LeetCode #605 |
 | ------------- | ------------- |
 | Dealing with two pointers that behave inversely was a learning hill | Completely underestimated the cases and ended up having a hard time adjusting from what I thought was absolutely right |
-| Didn't go through my initial solution and was too confident |  It unfortunately took a long time before I realized that it was a matter of checking adjacent 0's|
+| Didn't go through my initial solution and was too confident |  It unfortunately took a long time before I realized that it was a matter of checking adjacent 0's |
 
 <details>
   <summary>CLICK TO VIEW SOLUTION TO LC#345</summary>
@@ -326,7 +327,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180217696696
 ### Accomplishments
 | Valid Palindrome LeetCode #125  | Two Sum LeetCode #1 | Valid Anagram LeetCode #242 | Contains Duplicate #217
 | ------------- | ------------- |------------- | ------------- |
-| Learned more about AscII | Learned more about HashMaps in python | Leveraged sorting to find faster solutions | Learned more about HashSets|
+| Learned more about AscII | Learned more about HashMaps in python | Leveraged sorting to find faster solutions | Learned more about HashSets |
 
 <details>
   <summary>CLICK TO VIEW SOLUTIONS</summary>
@@ -474,7 +475,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180290874029
 ### Challenges     
 | Reverse Linked List #206  | Best Time to Buy and Sell Stock #121 |
 | ------------- | ------------- |
-| Mixed up pointers and nodes, confusion not realising we are not actually moving the nodes ever | No issues, went very well|
+| Mixed up pointers and nodes, confusion not realising we are not actually moving the nodes ever | No issues, went very well |
 
 <details>
   <summary>CLICK TO VIEW SOLUTION TO LC#206</summary>
@@ -753,7 +754,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180398618331
 ### Accomplishments
 | Binary Tree | Two Pointers | LinkedList | 2-D arrays
 | ------------- | ------------- | ------------- | ------------- |
-| More complex binary tree recursions | Improved two pointer usage in python | More complex techniques with linked lists | Identified knowledge gap with 2-D arrays
+| More complex binary tree recursions | Improved two pointer usage in python | More complex techniques with linked lists | Identified knowledge gap with 2-D arrays |
 ### Challenges     
 | Binary Tree | Two Pointers | LinkedList | 2-D arrays
 | ------------- | ------------- | ------------- | ------------- |
@@ -813,7 +814,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180435422631
 ### Accomplishments
 | 2-D Arrays | Arrays|
 | ------------- | ------------- |
-| Improved matrix manipulation through recursion | String manipulation with the number of ways approach|
+| Improved matrix manipulation through recursion | String manipulation with the number of ways approach |
 ### Challenges     
 | 2-D Arrays | Arrays|
 | ------------- | ------------- |
@@ -876,7 +877,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180472307224
 ### Accomplishments
 | 1-DP | Arrays |
 | ------------- | ------------- |
-| Introductory problem to 1-DP | Postfix and prefix approach from a given index is clear|
+| Introductory problem to 1-DP | Postfix and prefix approach from a given index is clear |
 ### Challenges     
 | 1-DP | Arrays |
 | ------------- | ------------- |
@@ -913,5 +914,47 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180472307224
             postfix *= nums[i]
         
         return output
+   ```
+</details>
+
+## Day 15
+Public accountability and date on [X](https://x.com/Edddushi/status/1805052612422643784)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+| 1-DP | Arrays |
+| ------------- | ------------- |
+| Developing intuition for DP problems | Learned about bit manipulation operation |
+### Challenges     
+| 1-DP | Arrays |
+| ------------- | ------------- |
+| None this time | The idea of masking wasn't clear at first |
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC198
+    def rob(self, nums: List[int]) -> int:
+        robFirst, robSecond = 0, 0
+
+        for num in nums:
+            robFirst, robSecond = robSecond, max(robSecond, num + robFirst)
+        return robSecond
+   ```
+
+   ```python
+    #LC371
+    def getSum(self, a: int, b: int) -> int:
+        mask = 0xffffffff
+        
+        while(b & mask):
+            a, b = a ^ b, (a&b) << 1
+
+        if(b > 0):
+            a = (a & mask)
+
+        return a
    ```
 </details>
