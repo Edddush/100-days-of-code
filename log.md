@@ -20,6 +20,7 @@ journey
       D013: 7: 2-D Arrays, Arrays
       D014: 9: 1-DP, Arrays
       D015: 9: 1-DP, Bit Manipulation
+      D016: 9: Maths
 ```
 > [!IMPORTANT]
 > - All solutions from this log are my own.
@@ -956,5 +957,39 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180505261242
             a = (a & mask)
 
         return a
+   ```
+</details>
+
+## Day 16
+Public accountability and date on [X](https://x.com/Edddushi/status/1805442845777478091)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Learned about recursion for maths operations without built-in functions
+- Used codesignal to practice for online assessments, particularly multiple file manipulation
+### Challenges     
+- Edge cases are hard to predict without thoroughly thinking through it
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC50
+    def myPow(self, x: float, n: int) -> float:
+        def powFun(x, n):
+            if not x:
+                return 0
+            if not n:
+                return 1
+
+            return x * powFun(x * x, n //2) if n % 2 else powFun(x * x, n//2)
+
+        output = powFun(x, abs(n))
+
+        if(n < 0):
+            return 1 / powFun(x, abs(n))
+
+        return output
    ```
 </details>
