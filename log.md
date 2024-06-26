@@ -21,6 +21,7 @@ journey
       D014: 9: 1-DP, Arrays
       D015: 9: 1-DP, Bit Manipulation
       D016: 9: Maths
+      D017: 9: HashSet
 ```
 > [!IMPORTANT]
 > - All solutions from this log are my own.
@@ -993,3 +994,10 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180544284577
         return output
    ```
 </details>
+
+## Day 17
+Public accountability and date on [X](https://x.com/Edddushi/status/1805802645472280793)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Relearned how to set up hashset in python
