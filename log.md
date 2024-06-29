@@ -1,5 +1,6 @@
 # 100 Days Of Code - Log
 
+<!---
 ```mermaid
 journey
     title MY 100-DAY CODING JOURNEY
@@ -26,6 +27,8 @@ journey
       D019: 8: HashSet, Two Pointers
       D020: 7: 1-DP, Graphs
 ```
+--->
+
 > [!IMPORTANT]
 > - All solutions from this log are my own.
 > - I am keeping track of my progress as I go through the challenge.
