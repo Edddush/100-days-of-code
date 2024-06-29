@@ -23,6 +23,8 @@ journey
       D016: 9: Maths
       D017: 9: HashSet
       D018: 9: HashSet
+      D019: 8: HashSet, Two Pointers
+      D020: 7: 1-DP, Graphs
 ```
 > [!IMPORTANT]
 > - All solutions from this log are my own.
@@ -1012,3 +1014,94 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180609765088
 ### Accomplishments
 - Solved problems related to uniqueness, differences, and occurence of elements in arrays using hashsets
 - 3% of the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 19
+Public accountability and date on [X](https://x.com/Edddushi/status/1806532905008595024)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Implemented an advanced hashset solution
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC11
+    def maxArea(self, heights: List[int]) -> int:
+        maximum = 0
+        left, right = 0, len(heights) - 1
+
+        while left < right:
+            area = (right - left) * min(heights[left], heights[right])
+
+            maximum = max(maximum, area)
+
+            if heights[left] < heights[right]:
+                left += 1
+            else:
+                right -= 1
+        
+        return maximum
+   ```
+   ```python
+    #LC128
+    def longestConsecutive(self, nums: List[int]) -> int:
+        setify = set(nums)
+
+        seq = 0
+
+        for num in nums:
+            if(num - 1 not in setify):
+                length = 0
+                while (num + length) in setify:
+                    length += 1
+                seq = max(length, seq)
+
+        return seq
+   ```
+</details>
+
+
+## Day 20
+Public accountability and date on [X](https://x.com/Edddushi/status/1806894291312140734)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Implemented a 1-DP solution which simplified the code and optimized the performance
+- Learned more about graphs and how to navigate them with DFS recursion
+### Challenges     
+- New topics which prove to be a bit more challenging than anticipated
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC133
+    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        newMap = {}
+
+        def dfs(node):
+            if node in newMap:
+                return newMap[node]
+
+            copy = Node(node.val)
+            newMap[node] = copy
+            
+            for neighbor in node.neighbors:
+                copy.neighbors.append(dfs(neighbor))
+            return copy
+
+        return dfs(node) if node else None
+   ```
+   ```python
+    #LC746
+    def minCostClimbingStairs(self, cost: List[int]) -> int:
+        for c in range(len(cost) - 3, -1, -1):
+            cost[c] = min(cost[c] + cost[c + 1], cost[c] + cost[c + 2])
+        
+        return min(cost[0], cost[1])
+   ```
+</details>
