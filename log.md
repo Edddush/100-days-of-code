@@ -1016,7 +1016,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180609765088
 > Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to uniqueness, differences, and occurence of elements in arrays using hashsets
-- 3% of the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+- 9% of the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
 
 
 ## Day 19
@@ -1108,3 +1108,11 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180689429131
         return min(cost[0], cost[1])
    ```
 </details>
+
+## Day 21
+Public accountability and date on [X](https://x.com/Edddushi/status/1807247195512492136)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved problems related to anagrams with hashsets and did an introduction to hashtables
+- 50% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
