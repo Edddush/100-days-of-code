@@ -1116,3 +1116,12 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180724719551
 ### Accomplishments
 - Solved problems related to anagrams with hashsets and did an introduction to hashtables
 - 50% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 22
+Public accountability and date on [X](https://x.com/Edddushi/status/1807601429785223553)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved problems related to dictionaries in python
+- 94% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
