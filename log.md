@@ -1125,3 +1125,31 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180760142978
 ### Accomplishments
 - Solved problems related to dictionaries in python
 - 94% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 23
+Public accountability and date on [X](https://x.com/Edddushi/status/1807927768664990054)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved problems related to dictionaries in python
+- 100% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 24
+Public accountability and date on [X](https://x.com/Edddushi/status/1808347142630563842)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved problems related to recursion
+- 13% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 25
+Public accountability and date on [X](https://x.com/Edddushi/status/1808690002164945054)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved problems related to binary search
+- 29% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
