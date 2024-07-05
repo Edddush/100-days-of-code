@@ -1153,3 +1153,10 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180869000216
 - Solved problems related to binary search
 - 29% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
 
+## Day 26
+Public accountability and date on [X](https://x.com/Edddushi/status/1809069933390897301)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved problems related to binary search with continuous functions
+- 39% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
