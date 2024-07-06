@@ -1160,3 +1160,38 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180906993339
 ### Accomplishments
 - Solved problems related to binary search with continuous functions
 - 39% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 27
+Public accountability and date on [X](https://x.com/Edddushi/status/1809433283513446762)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Implemented a binary search solution following my course on CodeSignal
+### Challenges     
+- Tweaking binary search to an advanced problem with space and time complexity constraints was challenging
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC540
+    def singleNonDuplicate(self, nums: List[int]) -> int:
+        left = 0
+        right = len(nums) - 1
+
+        while left <= right:
+            mid = (left + right) // 2
+
+            if (mid - 1 < 0 or nums[mid - 1] != nums[mid]) and (mid + 1 == len(nums) or nums[mid + 1] != nums[mid]):
+                return nums[mid]
+            
+            leftside = mid - 1 if nums[mid - 1] == nums[mid] else mid
+            if(leftside % 2 == 0):
+                left = mid + 1
+            else:
+                right = mid - 1
+
+        return -1
+   ```
+</details>
