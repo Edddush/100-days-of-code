@@ -1195,3 +1195,37 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180943328351
         return -1
    ```
 </details>
+
+## Day 28
+Public accountability and date on [X](https://x.com/Edddushi/status/1809799071927853521)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Implemented a binary search solution following my course on CodeSignal
+### Challenges     
+- Tweaking binary search to an advanced problem where we return a range of values was challenging
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC34
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        def binary_search(left, right, find_first):
+            if left <= right:
+                mid = (left + right) // 2
+                if nums[mid] > target or (find_first and target == nums[mid]):
+                    return binary_search(left, mid - 1, find_first)
+                else:
+                    return binary_search(mid + 1, right, find_first)
+            return left
+
+        first = binary_search(0, len(nums) - 1, True)
+        last = binary_search(0, len(nums) - 1, False) - 1
+        if first <= last:
+            return [first, last]
+        else:
+            return [-1, -1]
+
+   ```
+</details>
