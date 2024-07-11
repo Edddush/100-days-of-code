@@ -979,7 +979,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180544284577
 - Edge cases are hard to predict without thoroughly thinking through it
 
 <details>
-  <summary>CLICK TO VIEW SOLUTIONS </summary>
+  <summary>CLICK TO VIEW SOLUTION</summary>
 
    ```python
     #LC50
@@ -1172,7 +1172,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180943328351
 - Tweaking binary search to an advanced problem with space and time complexity constraints was challenging
 
 <details>
-  <summary>CLICK TO VIEW SOLUTIONS </summary>
+  <summary>CLICK TO VIEW SOLUTION </summary>
 
    ```python
     #LC540
@@ -1206,7 +1206,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180979907192
 ### Challenges     
 - Tweaking binary search to an advanced problem where we return a range of values was challenging
 <details>
-  <summary>CLICK TO VIEW SOLUTIONS </summary>
+  <summary>CLICK TO VIEW SOLUTION </summary>
 
    ```python
     #LC34
@@ -1229,3 +1229,106 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180979907192
 
    ```
 </details>
+
+## Day 29
+Public accountability and date on [X](https://x.com/Edddushi/status/1810126687268430146)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Implemented a binary search solution to a complex problem following my course on CodeSignal
+### Challenges     
+- Tweaking binary search to an advanced problem where the list is rotated was challenging, particularly identifying the search ranges and what they mean
+<details>
+  <summary>CLICK TO VIEW SOLUTION </summary>
+
+   ```python
+    #LC33 Search in Rotated Sorted Array
+    def search(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums) - 1
+
+        while left <= right:
+            mid = (left + right) // 2
+            if nums[mid] == target:
+                return mid
+            if nums[left] <= nums[mid] and nums[left] <= target < nums[mid]:
+                right = mid - 1
+            elif nums[mid] <= nums[right] and nums[mid] < target <= nums[right]:
+                left = mid + 1
+            elif nums[mid] > nums[right]:
+                left = mid + 1
+            else:
+                right = mid - 1
+
+        return -1
+   ```
+</details>
+
+## Day 30
+Public accountability and date on [X](https://x.com/Edddushi/status/1810523612627059104)
+> [!NOTE]
+> Written in Python.
+> Due to an increase in the number of problems to solve, I will reflect on the overview rather than specific problems.
+### Accomplishments
+- Timed my solutions to simulate a real interview experience
+### Challenges     
+- The time limit requires a lot of prior knowledge and proper planning for the solution
+
+<details>
+  <summary>CLICK TO VIEW SOLUTIONS </summary>
+
+   ```python
+    #LC35 Search Insert Position
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        nums.append(float('inf'))  # append an infinite element to handle edge case
+        left, right = 0, len(nums) - 1
+
+        while right >= left:
+            mid = left + ((right - left) // 2)
+
+            if nums[mid] == target:
+                return mid
+
+            if target > nums[mid]:
+                left = mid + 1
+            else:
+                right = mid - 1
+
+        return left
+   ```
+   ```python
+    #LC69 Sqrt(x)
+    def mySqrt(self, x: int) -> int:
+        left, right = 0, x
+
+        while left <= right:
+            mid = (left + right) // 2
+            mid_sqr = mid * mid
+
+            if mid_sqr == x:
+                return mid
+
+            if mid_sqr < x:
+                left = mid + 1
+            else:
+                right = mid - 1 
+        
+        return right
+   ```
+</details>
+
+## Day 31
+Public accountability and date on [X](https://x.com/Edddushi/status/1810886737234735244)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved complex problems related to binary search
+- 47% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 32
+Public accountability and date on [X](https://x.com/Edddushi/status/1811247280759939245)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Learning more about quick sort
+- 58% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
