@@ -1332,3 +1332,12 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181124728075
 ### Accomplishments
 - Learning more about quick sort
 - 58% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 33
+Public accountability and date on [X](https://x.com/Edddushi/status/1811609904370598153)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Learning more about quick sort
+- 63% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
