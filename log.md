@@ -1357,3 +1357,27 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181225583258
 ### Accomplishments
 - Solidified knowledge of internal algorithm in python
 - 88% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 36
+Public accountability and date on [X](https://x.com/Edddushi/status/1812696590521373115)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved a greedy algorithm problem over a 2-D array
+<details>
+  <summary>CLICK TO VIEW SOLUTION </summary>
+
+   ```python
+    LC1899 Merge Triplets to Form Target Triplet
+    def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
+        triplet_set = set()
+
+        for t in triplets:
+            if t[0] > target[0] or t[1] > target[1] or t[2] > target[2]:
+                continue
+            for i, v in enumerate(t):
+                if v == target[i]:
+                    triplet_set.add(i)
+        return len(triplet_set) == 3
+   ```
+</details>
