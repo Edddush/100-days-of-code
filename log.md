@@ -1401,4 +1401,5 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181305187325
                 previous = current
 
         return result
+```
 </details>
