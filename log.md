@@ -1360,8 +1360,6 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181225583258
 
 ## Day 36
 Public accountability and date on [X](https://x.com/Edddushi/status/1812696590521373115)
-> [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved a greedy algorithm problem over a 2-D array
 <details>
@@ -1380,4 +1378,27 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181269659052
                     triplet_set.add(i)
         return len(triplet_set) == 3
    ```
+</details>
+
+## Day 37
+Public accountability and date on [X](https://x.com/Edddushi/status/1813051873256960040)
+### Accomplishments
+- Solved a greedy algorithm problem over a 2-D array
+<details>
+  <summary>CLICK TO VIEW SOLUTION </summary>
+
+   ```python
+    LC2125 Number of Laser Beams in a Bank
+    def numberOfBeams(self, bank: List[str]) -> int:
+        previous = bank[0].count("1")
+        result = 0
+
+        for i in range(1, len(bank)):
+            current = bank[i].count("1")
+            result += current * previous
+
+            if current:
+                previous = current
+
+        return result
 </details>
