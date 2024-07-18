@@ -1403,3 +1403,20 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181305187325
         return result
 ```
 </details>
+
+## Day 38
+Public accountability and date on [X](https://x.com/Edddushi/status/1813422232279929100)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solidified knowledge of searching and sorting algorithms in python
+- 100% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+
+## Day 39
+Public accountability and date on [X](https://x.com/Edddushi/status/1813785162767036481)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solidified knowledge of stacks in python
+- 11% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
