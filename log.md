@@ -1420,3 +1420,11 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181378516276
 ### Accomplishments
 - Solidified knowledge of stacks in python
 - 11% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 40
+Public accountability and date on [X](https://x.com/Edddushi/status/1814140799363194954)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved complex problems using stacks in python
+- 33% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
