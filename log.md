@@ -93,7 +93,6 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180037021914
   <summary>CLICK TO VIEW SOLUTION</summary>
 
    ```python
-    class Solution:
         def gcdOfStrings(self, str1: str, str2: str) -> str:
             size1 = len(str1)
             size2 = len(str2)
@@ -141,7 +140,6 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180073623508
   <summary>CLICK TO VIEW SOLUTION</summary>
 
    ```python
-    class Solution:
         def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
             sorted_candies = candies[:]
             sorted_candies.sort()
@@ -1366,7 +1364,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181269659052
   <summary>CLICK TO VIEW SOLUTION </summary>
 
    ```python
-    LC1899 Merge Triplets to Form Target Triplet
+    #LC1899 Merge Triplets to Form Target Triplet
     def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         triplet_set = set()
 
@@ -1388,7 +1386,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181305187325
   <summary>CLICK TO VIEW SOLUTION </summary>
 
    ```python
-    LC2125 Number of Laser Beams in a Bank
+    #LC2125 Number of Laser Beams in a Bank
     def numberOfBeams(self, bank: List[str]) -> int:
         previous = bank[0].count("1")
         result = 0
@@ -1445,7 +1443,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181487194232
   <summary>CLICK TO VIEW SOLUTION </summary>
 
    ```python
-    LC946 - Validate Stack Sequences
+    #LC946 - Validate Stack Sequences
     def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
         i = 0
         stack = []
