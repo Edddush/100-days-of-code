@@ -1428,3 +1428,33 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181414079936
 ### Accomplishments
 - Solved complex problems using stacks in python
 - 33% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 41
+Public accountability and date on [X](https://x.com/Edddushi/status/1814506579833618712)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Solved complex problems using stacks in python
+- 38% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 42
+Public accountability and date on [X](https://x.com/Edddushi/status/1814871942320492652)
+### Accomplishments
+- Solved a stack validation problem in python
+<details>
+  <summary>CLICK TO VIEW SOLUTION </summary>
+
+   ```python
+    LC946 - Validate Stack Sequences
+    def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
+        i = 0
+        stack = []
+        for n in pushed:
+            stack.append(n)
+            while i < len(popped) and stack and popped[i] == stack[-1]:
+                stack.pop()
+                i += 1
+
+        return not stack
+   ```
+</details>
