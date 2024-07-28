@@ -1456,3 +1456,77 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181487194232
         return not stack
    ```
 </details>
+
+## Day 43
+Public accountability and date on [X](https://x.com/Edddushi/status/1815234849612894607)
+### Accomplishments
+- Solved a stack pattern validation problem in python
+<details>
+  <summary>CLICK TO VIEW SOLUTION </summary>
+
+   ```python
+    #LC456 - 132 Pattern
+    def find132pattern(self, nums: List[int]) -> bool:
+        stack = [] # pair [num, curLeftMin], mono-decreasing stack
+        curMin = nums[0]
+
+        for n in nums:
+            while stack and n >= stack[-1][0]:
+                stack.pop()
+            if stack and n < stack[-1][0] and n > stack[-1][1]:
+                return True
+
+            stack.append([n, curMin]) 
+            curMin = min(n, curMin)
+
+        return False
+   ```
+</details>
+
+## Day 44
+Public accountability and date on [X](https://x.com/Edddushi/status/1815594998848434421)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Learning about queues
+- 57% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 45
+Public accountability and date on [X](https://x.com/Edddushi/status/1815929765951594544)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Concluded the lesson on queues
+- 71% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 46
+Public accountability and date on [X](https://x.com/Edddushi/status/1816322078049493115)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Learning more about linked lists
+- 80% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 47
+Public accountability and date on [X](https://x.com/Edddushi/status/1816681455474311219)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Wrapped up the lesson on linked lists
+- 95% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 48
+Public accountability and date on [X](https://x.com/Edddushi/status/1817045991079428220)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Completed the entire unit with complex exercises
+- 100% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Day 49
+Public accountability and date on [X](https://x.com/Edddushi/status/1817377372062052715)
+> [!NOTE]
+> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+### Accomplishments
+- Learning about trees in python
+- 14% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
