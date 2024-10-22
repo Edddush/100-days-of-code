@@ -1002,7 +1002,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180544284577
 ## Day 17
 Public accountability and date on [X](https://x.com/Edddushi/status/1805802645472280793)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Relearned how to set up hashset in python
 - 3% of the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1011,7 +1011,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180580264547
 ## Day 18
 Public accountability and date on [X](https://x.com/Edddushi/status/1806097650887926146)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to uniqueness, differences, and occurence of elements in arrays using hashsets
 - 9% of the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1110,7 +1110,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180689429131
 ## Day 21
 Public accountability and date on [X](https://x.com/Edddushi/status/1807247195512492136)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to anagrams with hashsets and did an introduction to hashtables
 - 50% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1119,7 +1119,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180724719551
 ## Day 22
 Public accountability and date on [X](https://x.com/Edddushi/status/1807601429785223553)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to dictionaries in python
 - 94% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1128,7 +1128,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180760142978
 ## Day 23
 Public accountability and date on [X](https://x.com/Edddushi/status/1807927768664990054)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to dictionaries in python
 - 100% of the first unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1137,7 +1137,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180792776866
 ## Day 24
 Public accountability and date on [X](https://x.com/Edddushi/status/1808347142630563842)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to recursion
 - 13% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1146,7 +1146,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180834714263
 ## Day 25
 Public accountability and date on [X](https://x.com/Edddushi/status/1808690002164945054)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to binary search
 - 29% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1154,7 +1154,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/180869000216
 ## Day 26
 Public accountability and date on [X](https://x.com/Edddushi/status/1809069933390897301)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved problems related to binary search with continuous functions
 - 39% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1318,7 +1318,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181052361262
 ## Day 31
 Public accountability and date on [X](https://x.com/Edddushi/status/1810886737234735244)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved complex problems related to binary search
 - 47% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1326,7 +1326,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181088673723
 ## Day 32
 Public accountability and date on [X](https://x.com/Edddushi/status/1811247280759939245)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Learning more about quick sort
 - 58% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1335,7 +1335,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181124728075
 ## Day 33
 Public accountability and date on [X](https://x.com/Edddushi/status/1811609904370598153)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Learning more about quick sort
 - 63% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1343,7 +1343,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181160990437
 ## Day 34
 Public accountability and date on [X](https://x.com/Edddushi/status/1811957832704536717)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Learned more about merge sort and practiced with problems
 - 75% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1351,7 +1351,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181195783270
 ## Day 35
 Public accountability and date on [X](https://x.com/Edddushi/status/1812255832589099166)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solidified knowledge of internal algorithm in python
 - 88% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1405,7 +1405,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181305187325
 ## Day 38
 Public accountability and date on [X](https://x.com/Edddushi/status/1813422232279929100)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solidified knowledge of searching and sorting algorithms in python
 - 100% of the second unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1414,7 +1414,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181342223227
 ## Day 39
 Public accountability and date on [X](https://x.com/Edddushi/status/1813785162767036481)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solidified knowledge of stacks in python
 - 11% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1422,7 +1422,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181378516276
 ## Day 40
 Public accountability and date on [X](https://x.com/Edddushi/status/1814140799363194954)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved complex problems using stacks in python
 - 33% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1430,7 +1430,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181414079936
 ## Day 41
 Public accountability and date on [X](https://x.com/Edddushi/status/1814506579833618712)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Solved complex problems using stacks in python
 - 38% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1486,7 +1486,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181523484961
 ## Day 44
 Public accountability and date on [X](https://x.com/Edddushi/status/1815594998848434421)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Learning about queues
 - 57% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1494,7 +1494,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181559499884
 ## Day 45
 Public accountability and date on [X](https://x.com/Edddushi/status/1815929765951594544)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Concluded the lesson on queues
 - 71% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1502,7 +1502,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181592976595
 ## Day 46
 Public accountability and date on [X](https://x.com/Edddushi/status/1816322078049493115)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Learning more about linked lists
 - 80% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1510,7 +1510,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181632207804
 ## Day 47
 Public accountability and date on [X](https://x.com/Edddushi/status/1816681455474311219)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Wrapped up the lesson on linked lists
 - 95% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1518,7 +1518,7 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181668145547
 ## Day 48
 Public accountability and date on [X](https://x.com/Edddushi/status/1817045991079428220)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Completed the entire unit with complex exercises
 - 100% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
@@ -1526,7 +1526,12 @@ Public accountability and date on [X](https://x.com/Edddushi/status/181704599107
 ## Day 49
 Public accountability and date on [X](https://x.com/Edddushi/status/1817377372062052715)
 > [!NOTE]
-> Following an increase the difficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
+> Following an increase in thedifficulty of problems, I am taking a few days to reinforce my data structure and algorithms fundamentals first.
 ### Accomplishments
 - Learning about trees in python
 - 14% of the third unit in the course "Mastering Algorithms and Data Structures in Python" on [CodeSignal](https://app.codesignal.com/profile/edddush/overview)
+
+## Days 50 - 100:
+Public accountability and date on [X](https://x.com/Edddushi/)
+> [!NOTE]
+> Following an increase in the number and difficulty of problems, I documented the remainder of my progress on X(Twitter).
